@@ -56,3 +56,16 @@ def count(letterHere,word,num):
             count = count + 1
     print(count)
 
+# the word "in" is a boolean operator that takes two strings and returns "True"
+# if the first appears as a substring in the second
+# this example prints all the letters from word1 that also appear in word2:
+
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print(letter)
+
+# check if word is reverse of another
+def is_reverse(word1, word2):
+    return word1 == reversed(word2)
+
