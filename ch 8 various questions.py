@@ -69,3 +69,4 @@ def in_both(word1, word2):
 def is_reverse(word1, word2):
     return word1 == reversed(word2)
 
+# https://docs.python.org/3/library/stdtypes.html#string-methods
