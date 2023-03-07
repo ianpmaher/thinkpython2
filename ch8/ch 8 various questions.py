@@ -56,3 +56,41 @@ def count(letterHere,word,num):
             count = count + 1
     print(count)
 
+# the word "in" is a boolean operator that takes two strings and returns "True"
+# if the first appears as a substring in the second
+# this example prints all the letters from word1 that also appear in word2:
+
+def in_both(word1, word2):
+    for letter in word1:
+        if letter in word2:
+            print(letter)
+
+# check if word is reverse of another
+def is_reverse(word1, word2):
+    return word1 == reversed(word2)
+
+# https://docs.python.org/3/library/stdtypes.html#string-methods
+
+#Exerise 8-2: 
+# There is a string method called "count" that is similar to the function in 
+# Looping and Counting on pg 89. Read the documentation of this method and 
+# write an invocation that counts the number of a's in 'bananas.'
+
+# >>> fruit = 'bananas' 
+# >>> fruit.count('a')
+# 3
+
+""" 
+Exercise 8-3:
+A string slice can take a third index that specificies the "step size"
+that is, the number of spaces between successive characters. A step size of 2
+means every other character; 3 means every third, etc. 
+A step size of -1 goes backwards, so the slice [::-1] generates a reversed string.
+
+Use this idiom to write a one-line version of is_palindrome from ex 6-3
+"""
+def is_palindrome(word):
+    return word == word[::-1]
+
+print(is_palindrome('kayak'))
+print(is_palindrome('banana'))
