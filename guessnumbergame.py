@@ -19,6 +19,6 @@ while True:
         print(f"Congrats {name}! You win!")
         break
     elif guess > secret:
-        print("The secret number is lower than that...")
+        print("The secret number is lower than your guess...")
     else:
-        print("The secret number is greater than that...")
+        print("The secret number is greater than your guess...")
